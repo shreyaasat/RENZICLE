@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>Webpage Design</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <img src="images\logo.jpeg" class="logo">
+            </div>
+                <div class="menu" id="home">
+                    <a href="#home">HOME</a>
+                    <a href="#about">ABOUT US</a>
+                    <a href="#contact">CONTACT</a>
+                    <a href="login.html">LOGIN</a>
+                </div>
+        </div> 
+
+        <div class="content1" id="home">
+            <div class="con-1">
+                <h1 class="con-h1">Are you a vehicle owner?</h1><br>
+                <button class="host-btn1"><a href="login.html">BECOME A HOST</a></button>
+            </div>
+            <div class="con-2">
+                <h1 class="con2-h1">Want to rent a vehicle?</h1><br>
+                <button class="host-btn1"><a href="map-page.html">SEARCH FOR VEHICLES</a></button>
+            </div>
+            </div>
+        </div></div>
+        <div class="about" id="about">
+            
+            <h1>ABOUT US</h1>
+            <div class="about-box">
+                <center>
+                <img src="images\pfp.jpg" class="pfp"><br><br>
+                <div class="info">
+                    <span class="info-name">S Shreyaa</span><br><br>
+                    <span class="info-det">A 5th semester Computer Science student in VIT Chennai.</span>
+                </div></center>
+            </div>
+            <div class="about-box">
+                <center>
+                <img src="images\pfp.jpg" class="pfp"><br><br>
+                <div class="info">
+                    <span class="info-name">Tushar Mohankumar</span><br><br>
+                    <span class="info-det">A 5th semester Computer Science student in VIT Chennai.</span>
+                </div></center>
+            </div>
+            <div class="about-box">
+                <center>
+                <img src="images\pfp.jpg" class="pfp"><br><br>
+                <div class="info">
+                    <span class="info-name">Ashley Sanu</span><br><br>
+                    <span class="info-det">A 5th semester Computer Science student in VIT Chennai.</span>
+                </div></center>
+            </div>
+        </div>
+
+
+        <div class="contact" id="contact">
+            
+            <center><h1>CONTACT US</h1><div class="contact-box">
+                <table class="contact-table">
+                    <tr>
+                        <td>
+                            Email: renzinclequery@gmail.com<br><br>
+                            Phone no: +91-9999765578
+                        </td>
+                        <td>
+                            <form class="contact-form" id = "emailForm" action="index-php.php" method="post"  enctype="multipart/form-data">
+                                <table class="det-table">
+                                    <tr>
+                                        <td>Full name:</td><td><input type="text" id="name" name="name"><br></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Email:</td><td><input type="email" id="email" name="email"><br></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Subject:</td><td><input type="text" id="sub" name="sub"><br></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Message:</td><td><textarea name="msg"></textarea><br></td>
+                                    </tr>
+                                    <tr>
+                                        <td>File Upload:</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2"><input type='file' value='Choose file..' class="form-control" name="attachFile" id="attachFile" placeholder="attach" required></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2"><input type='submit' value='SUBMIT QUERY' class="btn1" name="send-mail"></td>
+                                    </tr>
+                                    
+                                </table>
+                            </form>
+                        </td>
+                    </tr>
+                </table>
+                
+        </center>
+        </div></div>
+
+    </div>
+    
+</body>
+</html>

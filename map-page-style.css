@@ -1,0 +1,60 @@
+.searchbar {
+    overflow: hidden;
+    background-color: #f8a058;
+  }
+  
+  .searchbar a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  .searchbar a:hover {
+    background-color: rgb(17, 30, 107);
+    color: white;
+  }
+  
+  
+  .searchbar input[type=text] {
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 10px;
+    font-size: 17px;
+    width: 800px;
+    border-radius: 12px;
+  }
+  
+.veh-list{
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    border: none;
+    background-color: #f8a058;
+    padding: 20px;
+}
+.veh-view{
+    min-height: 100px;
+    min-width: 500px;
+    margin: 10px;
+    border: 2px solid #f8a058;
+    padding: 20px;
+
+}
+.det{
+    display: inline;
+    float: left;
+    padding-left: 20px;
+}
+.img{
+    display: inline;
+    float: right;
+    padding-top: 20px;
+    padding-right: 20px;
+}
+img{
+    max-height: 100px;
+}

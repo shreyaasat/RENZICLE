@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="list-veh-owner-style.css">
+        <script>
+            function remove()
+            {
+                confirm("Are you sure you want to delete?")
+            }
+        </script>
+    </head>
+    <body>
+        <button class="back-button">Back&#x2190;</button>
+        <center>
+            <h1 class="title">UPLOADED VEHICLES</h1>
+        </center>
+        <div class="vehicles">
+            
+            
+            <div class="veh-box">
+                <center>
+                    <h2>Maruti Suzuki WagonR</h2>
+                <img src="images/car1.jpg" class="car1"><br><br>
+                <div class="info">
+                    Charge per hr: Rs. 250<br>
+                    Color: Blue<br>
+                    Mileage: 21 kmpl
+                
+                
+            </div>
+            <br><br>
+            <button class="edit" onclick="edit()">EDIT &#9998;</button>
+            <button class="rem" onclick="remove()">REMOVE</button>
+        </center>
+            </div>
+            <div class="veh-box">
+                <center>
+                    <h2>Hyundai Grand i10</h2>
+                <img src="images/car2.jpg" class="car2"><br><br>
+                <div class="info">
+                    Charge per hr: Rs. 270<br>
+                    Color: Blue<br>
+                    Mileage: 26 kmpl
+                
+            </div><br><br>
+            <button class="edit" onclick="edit()">EDIT &#9998;</button>
+            <button class="rem" onclick="remove()">REMOVE</button>
+        
+        
+        </center></div>
+            <div class="veh-box">
+                <center>
+                    <h2>Maruti Suzuki Swift</h2>
+                <img src="images/car3.jpg" class="car3"><br><br>
+                <div class="info">
+                    Charge per hr: Rs. 300<br>
+                    Color: Blue<br>
+                    Mileage: 23 kmpl
+                
+            </div>
+            <br><br>
+            <button class="edit" onclick="edit()">EDIT &#9998;</button>
+            <button class="rem" onclick="remove()">REMOVE</button>
+        </center></div>
+        </div>
+<br>
+        <center>
+            <a href="addvehicle.html"><button class="addveh">Add Vehicle</button></a>
+        </center>
+    </body>
+</html>

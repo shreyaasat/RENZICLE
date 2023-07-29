@@ -1,0 +1,222 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SignUp Form</title>
+<style>
+
+
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Georgia;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    background:rgb(5,67,107);
+ 
+}
+#banner{
+    position: relative;
+    
+}
+
+.container{
+    display:flex;
+    justify-content: center;
+
+}
+
+.login{
+  
+  margin-top: 20px;
+  background: rgb(247, 238, 238);
+  width: 650px;
+  height: 550px;
+  border-radius: 5px;
+}
+form{
+  width: 550px;
+  margin: 20px auto;
+}
+
+p{
+    margin: 10px;
+}
+hr{
+    border-top: 2px solid rgb(5,67,107);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+form label{
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 5px;
+}
+
+input{
+    
+    margin: 2px;
+    border: none;
+    outline: none;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    
+}
+button{
+    border: none;
+    outline: none;
+    padding: 8px;
+    width: 110px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 5px;
+    background: rgb(5,67,107);
+ 
+}
+button:hover{
+    background: rgb(116, 114, 114);
+}
+
+
+input [type=checkbox] {
+            vertical-align: middle;
+            position: relative;
+            bottom: 1px;
+        }
+p{
+    margin: 2px;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+.flexi{
+display:flex;
+flex-flow:row; 
+margin-top: 3px; 
+
+}
+.dob{
+    margin-top: 3px;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 5px;
+    
+}
+.taxi{
+    background-size: cover;
+    height: 150px;
+    width: 100%;
+    background-size: cover;
+    justify-content:stretch;
+    
+}
+.logo{
+    width: 350px;
+    height:80px; 
+    position: absolute;
+    top:35px;
+    left:10px;
+    box-shadow: 3px 2px 2px 1px #888884;
+}
+
+
+
+</style>
+
+</head>
+<body>
+    <div id="banner">
+        <a><img src="images/taxi3.jpg"  class="taxi"></a>
+        <a><img src="images/vbslogo.jpg"  class="logo"></a>
+    </div>
+    <div class="container">
+        <div class="login">
+            <form action="sign-up1.php" method="POST">
+                <h2>Sign Up</h2>
+                <hr> 
+               
+            <div class="flexi">
+                <div>
+                  <label for="firstname"><b>First Name*</b><span class="required"></span>    </label>
+                  <input id="firstname" name="firstname" size="30" type="text"     placeholder="Enter first name"  />
+                </div>
+                
+                <div>
+                  <label for="lastname"><b>Last Name*</b><span class="required"></span></label>
+                  <input id="lastname"  name="lastname" size="30" type="text"     placeholder="Enter last name"/>
+                </div>
+            </div>
+            <div class="dob">
+
+            Date of Birth: <input name="dob" type = "date">
+           </div>
+
+
+
+            <div class="flexi">
+                <div>
+                  <label for="email"><b>Email*</b><span class="required"></span>    </label>
+                  <input id="email" name="email" size="30" type="text"     placeholder="Enter email"  />
+                </div>
+                
+                <div>
+                  <label for="mobile"><b>Mobile*</b><span class="required"></span></label>
+                  <input id="mobile"  name="mobile" size="30" type="text"     placeholder="Enter Mobile"/>
+                </div>
+            </div>
+
+
+            <div class="flexi">
+                <div>
+                  <label for="address1"><b>Adress Line 1*</b><span class="required"></span>    </label>
+                  <input id="address1" name="address1" size="30" type="text"     placeholder="Enter address"  />
+                </div>
+                
+                <div>
+                  <label for="address2"><b>Address Line 2*</b><span class="required"></span></label>
+                  <input id="address2"  name="address2" size="30" type="text"     placeholder="Enter address"/>
+                </div>
+            </div>
+
+
+
+            <div class="flexi">
+                <div>
+                  <label for="password1"><b>Password*</b><span class="required"></span>    </label>
+                  <input id="password1" name="password1" size="30" type="password"     placeholder="Enter address"  />
+                </div>
+                
+                <div>
+                  <label for="password2"><b>Confirm Password*</b><span class="required"></span></label>
+                  <input id="password2"  name="password2" size="30" type="password"     placeholder="Retype password"/>
+                </div>
+            </div>
+            <br>
+        
+                <label>
+                    <input type="checkbox"> 
+                    By submitting this form, I agree to the   <a href="#" style="color:dodgerblue" ><u>Terms and Conditions </u></a> and <a href="#" style="color:dodgerblue"> <u>Privacy Policy.</u>
+                </label>
+        
+                <div style="text-align:center ; margin-top: -8px;">
+                    <!-- <button>Submit</button> -->
+                    <input type="submit" name="submit1" value="Submit">
+                    <button>Cancel</button>
+                </div>
+            
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>

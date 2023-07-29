@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Vehicle Booking System</title>
+        <link rel="stylesheet" href="login-style.css">
+        <script src="login-verif.js"></script>
+    </head>
+
+    <body>
+          
+        <div id="banner">
+            <a><img src="images\taxi3.jpg"  class="taxi"></a>
+            <a><img src="images\vbslogo.jpg"  class="logo"></a>
+        </div>
+
+        <div class="container" id="container">
+            <div class="login">
+                    <form name="Form" action="login.php" method="post" onsubmit="return validateForm()" >
+                    <div class="title">Log in to Your Account</div>
+                    
+                    <label for="email">Email</label>
+                    <input type="text" name="email" placeholder="Enter your Email" id="email">
+                    <div class="error" id="emailErr"></div>
+                
+                    <label for="pwd">Password </label>
+                    
+                   <label> <input type="password" name="pwd" placeholder="Enter your password" id="pwd" > <div class="error" id="pwdErr"></div><span style="color:darkred;" class="hover1" id="forgotpwd" onclick="myFunction()">Forgot your password?</span></label>
+                
+                    <div style="text-align:center ;">
+                    <button type="submit" style="margin-bottom: 10px;text-align: center;">Submit</button><br>
+                    
+                    <a href="sign-up.html">Dont have an account?&nbsp&nbsp&nbsp <span style="color:darkred; font-weight:bolder;" 
+                        class="hover1" > Sign up now</span>  </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="forgot" id="forgot">
+                    <form name="form2" class="form2" onsubmit="return validateform2()">
+                         <label for="email2">Email</label>
+                         <input type="text" name="email2"   class="input2" placeholder="Enter your Email" id="email2" >  
+                         <div class="error2" id="emailErr2"></div>                         
+                           <div style="text-align:center;">
+                            <input type="submit" style="margin-bottom: 10px;" value="Send Recovery Link" class="resetemail" >
+                           </div> 
+                           <div class="popup" id="popup">
+                                   <img src="tick.jpeg">
+                                   <p>We have emailed your password reset link! Please check your email and click on the provided 
+                                    link to reset your password.</p>
+                                   <button type="button" onclick= "closepopup()">Ok</button>
+                           </div>
+                    </form>
+        </div>
+    </body>
+</html>

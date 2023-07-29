@@ -1,0 +1,20 @@
+<map>
+<mapname>Map 01</mapname>
+<width>800</width>
+<height>600</height>
+<maptype>normal</maptype>
+<minzoom>5</minzoom>
+<maxzoom>17</maxzoom>
+<navcontrol>small</navcontrol>
+<startlat>52.0</startlat>
+<startlong>13.5</startlong>
+<startzoom>6</startzoom>
+<markers>
+<marker lat="53.5" lng="12.7" image="flight.png" link="http://www.google.de"/>
+<marker lat="52.5" lng="13" image="dash.png" link="http://www.yahoo.de"/>
+<marker lat="51.5" lng="12" image="marker.png" link="http://www.gothic-singles.de"/>
+<marker lat="51" lng="10" image="marker.png" link="http://www.example.com"/>
+<marker lat="48" lng="11" image="flight.png" link="http://www.ajax-info.de"/>
+<marker lat="47.5" lng="13" image="dash.png" link="http://www.test.de"/>
+</markers>
+</map>

@@ -1,0 +1,60 @@
+<?php
+ session_start();
+ include ("config.php");
+?>
+
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Renter Details</title>
+        <link rel="stylesheet" href="my-acc-style.css">
+        <link rel="stylesheet" href="login-style.css">
+        
+        
+    </head>
+
+    <body>
+          
+        <div id="banner">
+            <a><img src="images/taxi3.jpg"  class="taxi"></a>
+            <a><img src="images/vbslogo.jpg"  class="logo"></a>
+        </div>
+        
+        <div class="container" id="container">
+            <div class="login" style="height: 400px;">
+                
+                    <form name="Form" action="" method="post">   
+                    <div class="title">Owner Details</div>
+                    
+                    <label>First Name</label>
+                    
+                    <input type = "text" id="fname" name="fname" value="<?=$_SESSION['fname']?>" disabled>
+
+                    <label>Last Name</label>
+                    <input type = "text" name="lname" value="<?=$_SESSION['lname']?>" disabled>
+                                                         
+                    <label>Email</label>
+                    <input type = "text" name="email" value="<?=$_SESSION['email']?>" disabled>
+                                     
+                   <label>Contact Number</label>
+                   <input type = "text" name="mobile" value="<?=$_SESSION['mobile']?>" disabled>
+                    
+                                        
+                    <br>
+                    <br>
+                    <u>
+                  
+                </form>
+                
+            </div>
+        </div>
+
+                       
+            
+        </div>
+    
+
+    </body>
+
+ </html>
